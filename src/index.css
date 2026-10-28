@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-canvas: #ecf6f2;
+  --color-card: #ffffff;
+  --color-edge: #d8e8e1;
+  --color-ink: #0b2a24;
+  --color-mute: #587870;
+  --color-teal: #0e8a76;
+  --color-teal-deep: #0a6455;
+  --color-teal-soft: #d7f0e9;
+  --color-coral: #e2604f;
+  --color-coral-soft: #fdeae6;
+}
+
+body {
+  background-color: var(--color-canvas);
+}
+
+::selection {
+  background-color: var(--color-teal);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: #b4d2c8;
+  border-radius: 8px;
+}
